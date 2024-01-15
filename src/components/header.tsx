@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export function Header() {
   return (
-    <div className="flex items-center justify-between">
+    <header className="flex items-center justify-between">
       <div className="flex items-center gap-5">
         <Link href="/" className="text-2xl font-extrabold text-white">
           devstore
@@ -26,7 +26,7 @@ export function Header() {
           <span className="text-sm">Cart (0)</span>
         </div>
 
-        <div className="w-px h-4 bg-zinc-700" />
+        <div className="w-px" />
 
         <Link href="/" className="flex items-center gap-2 hover:underline">
           <span className="text-sm">Account</span>
@@ -39,6 +39,6 @@ export function Header() {
           />
         </Link>
       </div>
-    </div>
+    </header>
   )
 }
