@@ -10,9 +10,9 @@ async function getFeaturedProducts(): Promise<Product[]> {
     },
   })
 
-  const produtcs = await response.json()
+  const products = await response.json()
 
-  return produtcs
+  return products
 }
 
 export default async function Home() {
